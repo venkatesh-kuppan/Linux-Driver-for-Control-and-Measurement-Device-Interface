@@ -5,6 +5,9 @@ This project aims at writing a basic skeleton driver of Control and Measurement 
 
 I have used the following comedi-0.7.70 and comedilib-0.7.22. The basic installation for these libraries remain the same.
 
+The file skeleton.c can be used as refernce for the implementation of driver.
+The file test_program is the user space test program to test the newly added kernel module.
+
 
 
 Steps:
@@ -14,5 +17,7 @@ Steps:
 4. Run commands "make" and "make install".
 5. use command modprobe to load the .ko i.e the kernel object.
 6. Finally run the command "comedi_config /dev/comedi CMDI"
-7. 
+
+
+Tips: Use dmesg extensively and appropriately to monitor the kernel logs when you load the module. 
 
