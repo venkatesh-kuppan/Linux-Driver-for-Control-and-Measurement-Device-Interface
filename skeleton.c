@@ -16,7 +16,7 @@ static int interface_ai_rinsn(comedi_device*, comedi_subdevice*,
 	comedi_insn*, lsampl_t*);
 
 static comedi_driver driver_interface = {
-	driver_name: "CMDI_driver",
+	driver_name: "CMDI",
 	module: THIS_MODULE,
 	attach: interface_attach,
 	detach: interface_detach
@@ -57,7 +57,7 @@ comedi_insn *insn, lsampl_t *data)
 
 static int interface_detach(comedi_device *dev)
 {
-	printk("detach called: dev = %x\n", dev);
+	printk("detach call success: dev = %x\n", dev);
 	return 0;
 }
 
